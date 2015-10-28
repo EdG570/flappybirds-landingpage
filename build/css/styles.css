@@ -366,14 +366,14 @@ h2 {
   font-family: 'Anton', sans-serif; }
 
 p {
-  font-family: 'Oswald', sans-serif;
+  font-family: "font-family: " Oswald ", sans-serif";
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1.4; }
 
 @media only screen and (min-width: 1140px) {
   .container {
-    width: 1140px;
+    width: 1250px;
     margin: 0 auto; } }
 
 header {
@@ -396,35 +396,46 @@ header {
   #header-content h2 {
     letter-spacing: 1px;
     color: #fff;
-    font-size: 1em;
-    line-height: 2; }
+    font-size: 1.4em;
+    line-height: 1.4;
+    font-family: "font-family: " Oswald ", sans-serif";
+    font-weight: 300;
+    margin-top: 0; }
   @media only screen and (min-width: 500px) {
     #header-content {
-      width: 28em; } }
+      width: 26em; } }
 
 ul {
   list-style: none;
   width: 18em;
   margin: 0 auto;
   position: relative;
-  bottom: 9em;
+  bottom: 13em;
   padding-left: 0; }
   @media only screen and (min-width: 750px) {
     ul {
-      width: 20em; } }
+      width: 35em; } }
   ul li {
     display: inline-block;
-    margin-right: 2em; }
+    margin-right: 0em;
+    padding: 3em;
+    background: url("images/cloud-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center; }
     ul li:last-child {
       margin-right: 0; }
     @media only screen and (min-width: 750px) {
       ul li {
-        margin-right: 3em; } }
+        margin-right: 0em; } }
   ul a {
     text-decoration: none;
-    color: orange;
+    color: #3C98A0;
     letter-spacing: 1px;
-    font-size: 1.25em; }
+    font-size: 1.1em; }
+    ul a:hover {
+      color: orange; }
   @media only screen and (min-width: 750px) {
     ul {
       float: right; } }
@@ -474,7 +485,8 @@ h1 {
     .features-section .features p {
       width: 19em;
       margin: 0 auto;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      line-height: 1.5; }
     @media only screen and (min-width: 960px) {
       .features-section .features {
         float: left;
@@ -499,7 +511,7 @@ h1 {
     letter-spacing: 1px;
     border-radius: 5px; }
   .call-to-action h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "font-family: " Oswald ", sans-serif";
     color: #fff;
     font-weight: 300;
     letter-spacing: 1px;
