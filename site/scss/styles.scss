@@ -74,7 +74,7 @@ header {
   li {
     display: inline-block;
     margin-right: 0em;
-    padding: 3em;
+    padding: 3em 3.25em 3em 3em;
     text-align: center;
     &:last-child {
       margin-right: 0;
@@ -98,8 +98,10 @@ header {
   a {
     text-decoration: none;
     color: orange;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-size: 1.1em;
+    font-family: $oswald-font;
+    font-weight: 200;
     &:hover {
       color: #87E185;
     }
