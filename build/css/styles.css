@@ -405,39 +405,45 @@ header {
     #header-content {
       width: 26em; } }
 
-ul {
+.nav-links {
   list-style: none;
   width: 18em;
   margin: 0 auto;
   position: relative;
-  bottom: 13em;
+  bottom: 11em;
   padding-left: 0; }
   @media only screen and (min-width: 750px) {
-    ul {
-      width: 35em; } }
-  ul li {
+    .nav-links {
+      width: 35em;
+      bottom: 13em; } }
+  .nav-links li {
     display: inline-block;
     margin-right: 0em;
     padding: 3em;
-    background: url("images/cloud-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center; }
-    ul li:last-child {
+    .nav-links li:last-child {
       margin-right: 0; }
+    @media only screen and (max-width: 749px) {
+      .nav-links li {
+        background: transparent;
+        padding: 0;
+        margin-right: 3em; } }
     @media only screen and (min-width: 750px) {
-      ul li {
-        margin-right: 0em; } }
-  ul a {
+      .nav-links li {
+        margin-right: 0em;
+        background: url("images/cloud-background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; } }
+  .nav-links a {
     text-decoration: none;
-    color: #3C98A0;
+    color: orange;
     letter-spacing: 1px;
     font-size: 1.1em; }
-    ul a:hover {
-      color: orange; }
+    .nav-links a:hover {
+      color: #87E185; }
   @media only screen and (min-width: 750px) {
-    ul {
+    .nav-links {
       float: right; } }
 
 h1 {
@@ -525,3 +531,18 @@ footer {
   color: #fff;
   background-color: #3C98A0;
   text-align: center; }
+  footer p {
+    font-weight: 200;
+    color: lightgray; }
+  footer ul {
+    list-style: none; }
+  footer li {
+    display: inline-block;
+    margin-right: 2em; }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px; }
+    footer a:hover {
+      color: orange; }
