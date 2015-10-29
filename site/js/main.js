@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-  loadCSS("css/styles.css");
   
- 
+ $('#header-content').velocity("fadeIn", { duration: 1500 });
+
+
  function loop(){
   $('#flappy').show();
-  $('#flappy').animate({
+  $('#flappy').velocity({
       left: "+=3000",
       
     }, 10000, function(){
