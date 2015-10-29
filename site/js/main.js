@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  loadCSS("css/styles.css");
+  
  
  function loop(){
   $('#flappy').show();
