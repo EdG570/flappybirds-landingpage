@@ -48,6 +48,15 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/js'));
 });
 
+gulp.task('loadCSS', function() {
+  return browserify('site/js/loadCSS.js')
+    .bundle()
+    .pipe(source('loadCSS.js'))
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+});
+
 // Styles build task, concatenates all the files
 gulp.task('styles', function() {
   return gulp.src('site/css/*.css')
@@ -62,8 +71,15 @@ gulp.task('images', function() {
     .pipe(gulp.dest('build/img'));
 });
 
+// Image optimization task
+gulp.task('css-images', function() {
+  return gulp.src('site/css/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/css/images'));
+});
+
 // Default task
 gulp.task('default', ['jshint', 'sass', 'watch']);
 
 // Build task
-gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'styles', 'images']);
+gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'loadCSS', 'styles', 'images', 'css-images']);
