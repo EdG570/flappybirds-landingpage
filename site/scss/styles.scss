@@ -24,21 +24,21 @@ p {
 }
 
 header {
-  background: url('images/flappy-background-small.png');
+  background: url('images/flappy-background-small.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: none;
   padding: 12em 1em 12em 1em;
 
   @media only screen and (min-width: 640px) {
-    background: url('images/flappy-background-medium.png');
+    background: url('images/flappy-background-medium.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: none;
   }
 
   @media only screen and (min-width: 960px) {
-    background: url('images/flappy-background-large.png');
+    background: url('images/flappy-background-large.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: none;
